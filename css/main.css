@@ -1,0 +1,207 @@
+
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+
+* {
+    box-sizing: inherit;
+}
+
+
+body {
+  background: #C6EBF2;
+  margin: 1rem auto;
+  font-family: 'Libre Franklin', 'Geneva', 'Century Gothic', sans-serif;
+  max-width: 800px;
+}
+
+
+header, footer {
+  background: #590013;
+  color: #FFF;
+  margin: 0;
+  padding: 2rem;
+}
+
+#header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+h1, h2, h3 {
+    font-family: 'Bree Serif', 'Palatino', 'Big Caslon', serif;
+}
+
+
+h2 {
+  text-align: center;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+#menu {
+  margin: 0;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+article {
+  margin: 1rem 0rem;
+  padding: 2rem;
+  border-style: solid;
+    background: #E8DAB2;
+}
+
+img {
+  max-width: 100%;
+}
+
+.caption {
+  font-size: 75%;
+}
+
+#coffee_container {
+  display: flex;
+}
+
+#coffee_container div {
+  flex: 1 1 50%;
+  margin: 0.5rem;
+}
+
+#coffee_container .text {
+  padding-right: 1rem;
+}
+
+#coffee_container .text p {
+  margin: 0;
+}
+
+#waffles_container {
+  display: flex;
+}
+
+.ingredients, .directions {
+  flex: 1 1 50%;
+}
+
+.ingredients {
+  padding-right: 1rem;
+}
+
+.list {
+  color: #000;
+}
+
+.list:hover {
+  color: #FFF;
+}
+
+#egg_container {
+  display: flex;
+  margin: 0;
+}
+
+#fried_photo:hover, #scrambled_photo:hover, #poached_photo:hover {
+  filter: opacity(75%);
+}
+
+#egg_container section {
+  padding: 1rem;
+  flex: 1 1 33%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #025373;
+}
+
+a:visited {
+  color: #590013;
+}
+
+a:active {
+  color: #FFF;
+}
+
+
+a.header_link:link {
+  color: #FFF;
+}
+
+a.header_link:visited {
+  color: #FFF;
+}
+
+a.header_link:active {
+  color: #FFF;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  body {
+    margin: 1rem;
+  }
+
+  #header_container {
+    flex-direction: column;
+  }
+
+  #menu {
+    margin: 0;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  #coffee_container {
+    flex-direction: column;
+  }
+
+  #waffles_container {
+    flex-direction: column;
+  }
+
+  #egg_container {
+    flex-direction: column;
+  }
+
+  #egg_container section {
+    border-top-style: solid;
+    border-width: thin;
+    border-color: #333;
+  }
+
+
+}
